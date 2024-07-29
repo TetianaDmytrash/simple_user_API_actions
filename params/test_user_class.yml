@@ -1,0 +1,21 @@
+test_positive_firstName:
+  -
+    firstName: generate_random_string(2, DIGITS_LETTERS_CHARS)
+    lastName: "surname1"
+    email: "test1@example.com"
+    completed: False
+    username: "test1"
+    password: "password123"
+    summary: "simple text 1"
+#  -
+#    a: [1, 0]
+#    b: [1, 2]
+#    expected: 1
+#  -
+#    a: [0, 1]
+#    b: [1, 2]
+#    expected: 2
+#  -
+#    a: [1, 1]
+#    b: [1, 2]
+#    expected: 3
