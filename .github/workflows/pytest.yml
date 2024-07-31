@@ -29,4 +29,5 @@ jobs:
           flask run &
       
       - name: Run pytest
-        run: pytest
+        run: |
+          pytest tests
