@@ -6,10 +6,20 @@ import os
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
+print("Current working directory:", os.getcwd())
+
+# Добавление директорий в sys.path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+
+# Печать sys.path для отладки
+print("sys.path:", sys.path)
+
 import pytest
 import jsonschema
 
-from helpMethod import *
+from lib.helpMethod import *
 from constants import *
 from schema import schema_user, schema_error
 
