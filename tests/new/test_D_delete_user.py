@@ -9,7 +9,17 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..',
 import pytest
 import jsonschema
 
-from helpMethod import *
+print("Current working directory:", os.getcwd())
+
+# Добавление директорий в sys.path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+
+# Печать sys.path для отладки
+print("sys.path:", sys.path)
+
+from lib.helpMethod import *
 from constants import *
 from schema import schema_error
 
